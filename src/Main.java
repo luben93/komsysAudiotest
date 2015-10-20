@@ -16,7 +16,7 @@ public class Main {
             a.connectTo(InetAddress.getByName(ip), Integer.parseInt(in));
             a.startStreaming();
             System.out.println("write to stop ");
-            String in =s.nextLine();
+            s.nextLine();
 
             System.out.println("stopping stream");
             a.stopStreaming();
