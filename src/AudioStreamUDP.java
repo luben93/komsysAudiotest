@@ -300,7 +300,7 @@ class Sender implements Runnable {
     protected void finalize() {
     	this.cleanUp();
     }
-    
+
     /**
      * Thanks to: Paulo Levi.
      * Lines can fail to open because they are already in use.
