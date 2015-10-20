@@ -149,7 +149,9 @@ class Receiver implements Runnable{
 				line.stop();
 				line.close();
 			}
-		} catch(Exception e) {}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
     }
     
     protected void finalize() {
@@ -187,7 +189,9 @@ class Receiver implements Runnable{
                     try {
                         dataline.close();
                     } catch (Exception e) {
-                    }
+						e.printStackTrace();
+
+					}
                 }
             }
         } catch (Exception e) {
@@ -294,7 +298,8 @@ class Sender implements Runnable {
 				line.stop();
 				line.close();
 			}
-		} catch(Exception e) {}
+		} catch(Exception e) {			e.printStackTrace();
+		}
     }
     
     protected void finalize() {
@@ -333,7 +338,9 @@ class Sender implements Runnable {
                     try {
                         dataline.close();
                     } catch (Exception e) {
-                    }
+						e.printStackTrace();
+
+					}
                 }
             }
         } catch (Exception e) {
